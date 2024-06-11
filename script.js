@@ -8,15 +8,16 @@ cost perguntas=[
     {
         enunciado:"Você costuma fumar",
         alternativas:[
+            
           "Sim"
           "Não"
     ]
     },     
       {
-       enunciado:"Pergunta 3",
+       enunciado:"Você se exercita?",
         alternativas:[
-         "Alternativa 1"
-         "Alternativa 2"
+         "Não"
+         "Sim"
   ]
   },                       
   ];
