@@ -8,39 +8,58 @@ cost perguntas=[
     {
         enunciado:"Você costuma fumar",
         alternativas:[
-            
-          "Sim"
-          "Não"
-    ]
+            {
+                texto:"Sim"
+                    afirmação:"afirmação",
+    }
+    {
+        texto:"Não"
+            afirmação:"afirmação"
+}
+]   
     },     
       {
        enunciado:"Você se exercita?",
         alternativas:[
-         "Não"
-         "Sim"
-  ]
-  },                       
-  ];
+           {
+                texto:"Sim"
+                    afirmação:"afirmação",
+    }
+    {
+        texto:"Não"
+            afirmação:"afirmação"
  {
      enunciado:"Você gosta de estudar?",
     alternativas:[
-       "Não"
-       "Sim"
-  ]
-  },     
+ {
+                texto:"Sim"
+                    afirmação:"afirmação",
+    }
+    {
+        texto:"Não"
+            afirmação:"afirmação"
+}    
   {
      enunciado:"Você é mais de exatas ou humanas?",
     alternativas:[
-       "Exatas"
-       "Humanas"
-  ]
-  }, 
+ {
+                texto:"Exatas"
+                    afirmação:"afirmação",
+    }
+    {
+        texto:"Humanas"
+            afirmação:"afirmação"
+}
   {
      enunciado:"O que você prefere?",
     alternativas:[
-       "Doces"
-       "Salgadas"
-  ]
+      {
+                texto:"Doce"
+                    afirmação:"afirmação",
+    {
+        texto:"Salgado"
+            afirmação:"afirmação"
+}
   },  
 
 let atual = 0;
