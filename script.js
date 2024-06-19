@@ -66,8 +66,13 @@ let atual = 0;
 let perguntaAtual;
 
 function mostraPergunta() {
+    if(atual >= perguntas.lenght){
+    mostraResultados();
+        return;
+         }
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaAlternativas.textoContent=""
     mostraAlternativas();
 }
 
@@ -80,3 +85,9 @@ function mostraAlternativas() {
 }
 
 mostraPergunta();
+         }
+function mostraResultado(){
+    caixaPerguntas.textC = "";
+}
+}
+mostraPergunta()
