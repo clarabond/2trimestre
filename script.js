@@ -1,10 +1,10 @@
-cost caixaPrincipal=document.querySelector(".caixa-principal")
-cost caixaPerguntas=document.querySelector(".caixa-perguntas")
-cost caixaAlternativas=document.querySelector(".caixa-alternativas")
-cost caixaResultado=document.querySelector(".caixa-resultado")
-cost textoResultado=document.querySelector(".texto-resultado")
+const caixaPrincipal = document.querySelector(".caixa-principal");
+const caixaPerguntas = document.querySelector(".caixa-perguntas");
+const caixaAlternativas = document.querySelector(".caixa-alternativas");
+const caixaResultado = document.querySelector(".caixa-resultado");
+const textoResultado = document.querySelector(".texto-resultado");
 
-cost perguntas=[
+const perguntas=[
     {
         enunciado:"Você costuma fumar",
         alternativas:[
@@ -16,8 +16,8 @@ cost perguntas=[
         texto:"Não"
             afirmação:"afirmação"
 }
-]   
-    },     
+]    
+    },
       {
        enunciado:"Você se exercita?",
         alternativas:[
@@ -28,6 +28,9 @@ cost perguntas=[
     {
         texto:"Não"
             afirmação:"afirmação"
+    }
+]
+},
  {
      enunciado:"Você gosta de estudar?",
     alternativas:[
@@ -38,7 +41,9 @@ cost perguntas=[
     {
         texto:"Não"
             afirmação:"afirmação"
-}    
+} 
+]
+},
   {
      enunciado:"Você é mais de exatas ou humanas?",
     alternativas:[
@@ -50,6 +55,8 @@ cost perguntas=[
         texto:"Humanas"
             afirmação:"afirmação"
 }
+]
+},
   {
      enunciado:"O que você prefere?",
     alternativas:[
@@ -60,13 +67,17 @@ cost perguntas=[
         texto:"Salgado"
             afirmação:"afirmação"
 }
+]
   },  
+
+
 
 let atual = 0;
 let perguntaAtual;
-
+let historiaFinal =";
+    
 function mostraPergunta() {
-    if(atual >= perguntas.lenght){
+    if(atual >= perguntas.lenght) {
     mostraResultados();
         return;
          }
@@ -75,14 +86,17 @@ function mostraPergunta() {
     caixaAlternativas.textoContent=""
     mostraAlternativas();
 }
-
-function mostraAlternativas() {
+=ṕunction mostraAlternativas() {
     for (const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa;
         caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
+function respostaSelecionada(opcaoSelecionada){
+    const afirmacoes = opcaoSelecionada.afirmacoes;
+    botaoAlternativa. addEventlistener("click", ()> respostaSelecionada(alternativa));
+    caixaAlternativas.a
 
 mostraPergunta();
          }
